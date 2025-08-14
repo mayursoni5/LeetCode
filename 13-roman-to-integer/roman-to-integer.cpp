@@ -6,7 +6,7 @@ public:
         };
         int total=0, n =s.size();
         for(int i = 0; i<n; i++){
-            if(roman[s[i]] < roman[s[i+1]]){
+            if(i + 1 < n && roman[s[i]] < roman[s[i+1]]){
                 total-=roman[s[i]];
             }
             else{
