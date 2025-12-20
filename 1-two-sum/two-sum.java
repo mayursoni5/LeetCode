@@ -7,6 +7,7 @@ class Solution {
                 return new int[]{mpp.get(n),i};
             }
             mpp.put(nums[i],i);
+            
         }
         return new int[]{};
     }
